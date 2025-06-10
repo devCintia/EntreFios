@@ -3,11 +3,16 @@ body {
 }
 
 .cabecalho {
-    background-color: #0e0027;
+    background-color: #A8BBA5;
     display: flex;
     justify-content: center;
     padding: 10px;
     margin-bottom: 60px;
+}
+
+.cabecalho img{
+    border-radius: 5px;
+    width: 20%;
 }
 
 .container {
@@ -16,7 +21,7 @@ body {
 }
 
 .container .produtos {
-    color: #6528D3;
+    color: #E2952D;
     font-size: 24px;
     font-weight: 500;
     margin-bottom: 32px;
@@ -31,8 +36,8 @@ body {
     margin-bottom: 32px;
 }
 
-.container .categorias-cartas,
-.container .preco-cartas {
+.container .categorias-bolsas,
+.container .preco-bolsas {
     display: flex;
     flex-direction: column;
     width: 40%;
@@ -41,14 +46,14 @@ body {
 .container label {
     letter-spacing: 2px;
     font-weight: 500;
-    color: #6528d3;
+    color: #E2952D;
 }
 
-.container .categorias-cartas select,
-.container .preco-cartas input {
+.container .categorias-bolsas select,
+.container .preco-bolsas input {
     padding: 16px 13px;
     border-radius: 2px;
-    border: 2px solid #6528D3;
+    border: 2px solid #888888;
     background-color: #f2eefa;
     color: #130234;
     height: 52px;
@@ -68,7 +73,7 @@ body {
 
 .container .filtros .btn-filtrar {
     border: none;
-    background-color: #6528d3;
+    background-color: #E2952D;
     color: #ededed;
     padding: 16px 32px;
     font-weight: 500;
@@ -80,10 +85,10 @@ body {
 }
 
 .container .filtros .btn-filtrar:hover {
-    background-color: #33008F;
+    background-color: #888888;
 }
 
-.container .cartas {
+.container .bolsas {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
@@ -91,7 +96,7 @@ body {
     margin-top: 32px;
 }
 
-.container .cartas .carta {
+.container .bolsas .bolsa {
     max-width: 365px;
     background-color: #ededed;
     color: #0e0027;
@@ -99,12 +104,19 @@ body {
     box-shadow: 0 6px 12px rgb(0, 0, 0, 0.2);
 }
 
-.container .carta {
+.container .bolsa {
     width: 100%;
     padding: 20px;
+    text-align: center;
 }
 
-.container .carta .informacoes {
+.container .bolsa .imgBolsa{
+    width: 70%;
+    margin: 0 auto;
+   
+}
+
+.container .bolsa .informacoes {
     background-color: #ffffff;
     display: flex;
     flex-direction: column;
@@ -114,27 +126,27 @@ body {
     border-bottom-right-radius: 20px;
 }
 
-.container .carta .informacoes .nome-personagem {
+.container .bolsa .informacoes .nome-personagem {
     font-size: 24px;
     font-weight: 700;
     color: #111111;
 }
 
-.container .carta .informacoes .categoria {
+.container .bolsa .informacoes .categoria {
     color: #7e7e7e;
     font-weight: 700;
 }
 
-.container .carta .informacoes .preco {
+.container .bolsa .informacoes .preco {
     font-size: 24px;
     letter-spacing: 2px;
     font-weight: 700;
     color: #4d8e5c
 }
 
-.container .carta .informacoes .btn-comprar {
+.container .bolsa .informacoes .btn-comprar {
     color: #ededed;
-    background-color: #6528d3;
+    background-color: #E2952D;
     padding: 16px;
     border-radius: 4px;
     letter-spacing: 2px;
@@ -144,14 +156,14 @@ body {
 
 }
 
-.container .carta .informacoes .btn-comprar:hover {
-    background-color: #330087;
+.container .bolsa .informacoes .btn-comprar:hover {
+    background-color: #888888;
 }
 
 .rodape {
     display: flex;
     justify-content: center;
-    background-color: #6528d3;
+    background-color: #A8BBA5;
     color: #ededed;
     padding: 20px;
     margin-top: 60px;
