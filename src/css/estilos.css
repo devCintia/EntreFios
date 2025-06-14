@@ -3,16 +3,18 @@ body {
 }
 
 .cabecalho {
-    background-color: #A8BBA5;
+    background: linear-gradient(to bottom, #A8BBA5 0%, #eff3ee 100%);
     display: flex;
     justify-content: center;
     padding: 10px;
     margin-bottom: 60px;
 }
 
-.cabecalho img{
-    border-radius: 5px;
-    width: 20%;
+.cabecalho img {
+    width: 20vw;         /* 20% da largura da tela */
+    max-width: 300px;    /* nunca maior que 300px */
+    min-width: 120px;    /* nunca menor que 120px */
+    height: auto;
 }
 
 .container {
@@ -158,6 +160,17 @@ body {
 
 .container .bolsa .informacoes .btn-comprar:hover {
     background-color: #888888;
+}
+
+.container .formasDePagamento{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.container .formasDePagamento img{
+    max-width: 100%;
+    height: auto;
 }
 
 .rodape {
