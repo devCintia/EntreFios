@@ -13,13 +13,24 @@
         <link rel="stylesheet" href="./src/css/reset.css">
         <link rel="stylesheet" href="./src/css/estilos.css">
         <link rel="stylesheet" href="./src/css/responsivo.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+            integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
     <body>
         <header class="cabecalho">
             <img src="./src/imagens/logoEntreFios.jpeg" alt="Logo EntreFios">
-
         </header>
         <main class="container">
+            <section class="redes-sociais">
+                <a href="https://wa.me/5553984061888" target="_blank"
+                    class="outer-shadow"><i class="fab fa-whatsapp"></i></a>
+
+                <a href="https://www.instagram.com/bolsas_ef/"
+                    target="_blank" class="outer-shadow"><i
+                        class="fab fa-instagram"></i></a>
+            </section>
             <h1 class="produtos">Produtos</h1>
             <div class="filtros">
                 <div class="categorias-bolsas">
@@ -190,11 +201,33 @@
                     </div>
                 </li>
             </ul>
-            <section class="formasDePagamento">
-                <img src="./src/imagens/EntreFiosFormaDePagamento.jpeg">
-            </section>
+
         </main>
-        <footer class="rodape">@2025 - Todos os direitos reservados</footer>
+        <footer class="rodape">
+            <div class="informacoes-finais">
+                <section class="formasDePgto">
+                    <h3>Formas de Pagamento:</h3>
+                    <h4>À Vista</h4>
+                    <p>Dinheiro</p>
+                    <p>Pix</p>
+                    <p>Cartão de Débito</p>
+                    <h4>Parcelado</h4>
+                    <p>Cartão de Débito</p>
+                </section>
+                <section class="formasDeContato">
+                    <h3>Fale Conosco! Faça sua encomenda!</h3>
+                    <a href="https://wa.me/5553984061888" target="_blank"
+                        class="outer-shadow"><i
+                            class="fab fa-whatsapp"></i><span>Telefone:(53)984061888</span></a><br>
+
+                    <a href="https://www.instagram.com/bolsas_ef/"
+                        target="_blank" class="outer-shadow"><i
+                            class="fab fa-instagram"></i><span>Instagram</span></a>
+                </section>
+            </div>
+            <!-- <p>@2025 - Todos os direitos reservados</p> -->
+
+        </footer>
         <script src="./src/js/index.js"></script>
 
     </body>

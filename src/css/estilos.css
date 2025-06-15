@@ -7,19 +7,33 @@ body {
     display: flex;
     justify-content: center;
     padding: 10px;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
 }
 
 .cabecalho img {
-    width: 20vw;         /* 20% da largura da tela */
-    max-width: 300px;    /* nunca maior que 300px */
-    min-width: 120px;    /* nunca menor que 120px */
+    width: 20vw;
+    /* 20% da largura da tela */
+    max-width: 300px;
+    /* nunca maior que 300px */
+    min-width: 120px;
+    /* nunca menor que 120px */
     height: auto;
 }
 
 .container {
     max-width: 1170px;
     margin: 0 auto;
+}
+
+.container .redes-sociais {
+    display: flex;
+    gap: 20px;
+    justify-content: end;
+}
+
+.container .redes-sociais a {
+    font-size: 25px;
+    color: #4d8e5c;
 }
 
 .container .produtos {
@@ -112,10 +126,10 @@ body {
     text-align: center;
 }
 
-.container .bolsa .imgBolsa{
+.container .bolsa .imgBolsa {
     width: 70%;
     margin: 0 auto;
-   
+
 }
 
 .container .bolsa .informacoes {
@@ -155,31 +169,48 @@ body {
     transition: 0.3s;
     text-align: center;
     text-decoration: none;
-
 }
 
 .container .bolsa .informacoes .btn-comprar:hover {
     background-color: #888888;
 }
 
-.container .formasDePagamento{
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
-}
-
-.container .formasDePagamento img{
-    max-width: 100%;
-    height: auto;
-}
-
 .rodape {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     background-color: #A8BBA5;
-    color: #ededed;
+    /* color: #ededed; */
     padding: 20px;
     margin-top: 60px;
+}
+
+.rodape .informacoes-finais {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.rodape .informacoes-finais .formasDePgto h3,
+.formasDeContato h3 {
+    color: #4d8e5c;
+}
+
+.rodape .informacoes-finais .formasDePgto h4,
+p {
+    color: #6c6c6c;
+}
+
+.rodape .informacoes-finais .formasDePgto p {
+    margin-left: 13px;
+}
+
+.formasDeContato a {
+    font-size: 20px;
+    color: #6c6c6c;
+}
+
+.formasDeContato a i {
+    margin-right: 8px;
 }
 
 .esconder {
@@ -191,78 +222,83 @@ body {
 }
 
 .galeria {
-  margin-top: 10px;
-  display: flex;
-  gap: 8px;
+    margin-top: 10px;
+    display: flex;
+    gap: 8px;
 }
 
-#imagem-principal{
+#imagem-principal {
     width: 50%;
 }
 
-#video-principal{
+#video-principal {
     width: 40%;
 }
 
-.btn-volta-index, .btn-comprar {
-  background-color: #4d8e5c;
-  padding: 15px;
-  border-radius: 5px;
-  color: #ededed;
-  display: inline-block;
-  margin: 25px;
+.btn-volta-index,
+.btn-comprar {
+    background-color: #4d8e5c;
+    padding: 15px;
+    border-radius: 5px;
+    color: #ededed;
+    display: inline-block;
+    margin: 25px;
 }
 
-.detalhe-bolsa{
+.detalhe-bolsa {
     margin-top: 45px;
     display: flex;
     flex-direction: column;
-    gap:25px;
+    gap: 25px;
     justify-content: center;
     align-items: center;
 }
 
-.detalhe-bolsa p{
+.detalhe-bolsa p {
     color: #7e7e7e;
     font-weight: 600;
     font-size: 20px;
+    text-align: center;
 
 }
 
 .miniatura {
-  width: 90px;
-  cursor: pointer;
-  border: 2px solid transparent;
+    width: 90px;
+    cursor: pointer;
+    border: 2px solid transparent;
 }
+
 .miniatura:hover {
-  border-color: #555;
+    border-color: #555;
 }
 
 .zoom {
-  max-width: 80%;
-  transition: transform 0.3s;
+    max-width: 80%;
+    transition: transform 0.3s;
 }
+
 .zoom:hover {
-  transform: scale(1.05);
+    transform: scale(1.05);
 }
 
 .relacionados {
-  margin-top: 40px;
+    margin-top: 40px;
 }
+
 .grid-relacionados {
-  display: flex;
-  gap: 16px;
-  flex-wrap: wrap;
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
 }
+
 .relacionado {
-  width: 150px;
-  text-align: center;
-  text-decoration: none;
-  color: inherit;
+    width: 150px;
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
 }
+
 .relacionado img {
-  width: 100%;
-  border-radius: 8px;
+    width: 100%;
+    border-radius: 8px;
 }
-
-
