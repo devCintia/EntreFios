@@ -189,3 +189,80 @@ body {
 .mostrar {
     display: block;
 }
+
+.galeria {
+  margin-top: 10px;
+  display: flex;
+  gap: 8px;
+}
+
+#imagem-principal{
+    width: 50%;
+}
+
+#video-principal{
+    width: 40%;
+}
+
+.btn-volta-index, .btn-comprar {
+  background-color: #4d8e5c;
+  padding: 15px;
+  border-radius: 5px;
+  color: #ededed;
+  display: inline-block;
+  margin: 25px;
+}
+
+.detalhe-bolsa{
+    margin-top: 45px;
+    display: flex;
+    flex-direction: column;
+    gap:25px;
+    justify-content: center;
+    align-items: center;
+}
+
+.detalhe-bolsa p{
+    color: #7e7e7e;
+    font-weight: 600;
+    font-size: 20px;
+
+}
+
+.miniatura {
+  width: 90px;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+.miniatura:hover {
+  border-color: #555;
+}
+
+.zoom {
+  max-width: 80%;
+  transition: transform 0.3s;
+}
+.zoom:hover {
+  transform: scale(1.05);
+}
+
+.relacionados {
+  margin-top: 40px;
+}
+.grid-relacionados {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.relacionado {
+  width: 150px;
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+}
+.relacionado img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+
